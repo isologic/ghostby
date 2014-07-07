@@ -13,6 +13,7 @@
 				jsDir: 'assets/js',
 				sassDir: 'assets/sass'
 			},
+			pkg: grunt.file.readJSON('package.json'),
 
 			concat: {
 				options: {
