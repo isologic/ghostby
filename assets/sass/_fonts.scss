@@ -1,8 +1,17 @@
 /* Fonts */
 
 // Import Google Web Fonts
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Abel|Maven+Pro|Share+Tech|Economica|Open+sans:300,400,700|Open+Sans+condensed:300,700|Ropa+Sans|Gruppo|Megrim);
 
+$abel: 'Abel', sans-serif;
+$maven-pro: 'Maven Pro', sans-serif;
+$economica: 'Economica', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$open-sans-cond: 'Open Sans Condensed', sans-serif;
+$ropa-sans: 'Ropa Sans', sans-serif;
+$share-tech: 'Share Tech', sans-serif;
+$gruppo: 'Gruppo', sans-serif;
+$megrim: 'Megrim', sans-serif;
 
 // Set local icon font
 @font-face {
