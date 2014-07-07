@@ -21,7 +21,7 @@
 				},
 				build: {
 					src: [
-						'<%= meta.bowerDir %>/gumby/js/plugins.js',         // Placeholder jQuery plugin, found in source JS dir
+						'<%= meta.bowerDir %>/gumby/js/plugins.js'        // Placeholder jQuery plugin, found in source JS dir
 						// '<%= meta.bowerDir %>/ more / bower / plugins.of.your.choice.js'
 					],
 					dest: '<%= meta.jsDir %>/components.js'
