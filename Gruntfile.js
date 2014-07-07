@@ -21,8 +21,10 @@
 				},
 				build: {
 					src: [
-						'<%= meta.bowerDir %>/gumby/js/plugins.js'        // Placeholder jQuery plugin, found in source JS dir
-						// '<%= meta.bowerDir %>/ more / bower / plugins.of.your.choice.js'
+						'<%= meta.bowerDir %>/gumby/js/plugins.js',        // Placeholder jQuery plugin, found in source JS dir
+						'<%= meta.bowerDir %>/greensock-js/src/uncompressed/TweenMax.js',
+						'<%= meta.bowerDir %>/greensock-js/src/uncompressed/jquery.gsap.js',
+						'<%= meta.bowerDir %>/jquery.easing/js/jquery.easing.js'
 					],
 					dest: '<%= meta.jsDir %>/components.js'
 				}
