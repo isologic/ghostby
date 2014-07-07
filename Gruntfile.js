@@ -19,7 +19,7 @@
 					stripBanners: true,
 					separator: ';'
 				}
-				dist: {
+				build: {
 					src: [
 						'<%= meta.bowerDir %>/gumby/js/plugins.js',
 						'<%= meta.bowerDir %>/greensock-js/src/uncompressed/TweenMax.js',
@@ -38,7 +38,6 @@
 					banner: '/*! <%= pkg.name %> - <%= pkg.version %>\n' +
 									' <%= pkg.author %>\n' + '<%= grunt.template.today("yyyy-mm-dd") %> */\n'
 				},
-
 				build: {
 					files: {
 						'<%= meta.jsDir %>/app.min.js': [
@@ -49,7 +48,7 @@
 			},
 
 			compass: {
-				dist: {
+				build: {
 					options: {
 						config: "config.rb"
 					}
@@ -78,6 +77,7 @@
 
 		});
 		grunt.registerTask('build', [
+			'concat',
 			'uglify',
 			'compass'
 		]);
