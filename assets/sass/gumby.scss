@@ -32,10 +32,10 @@
 @import "../bower/gumby/sass/base";
 @import "fonts";
 @import "../bower/gumby/sass/typography";
-@import "../bower/gumby/sass/grid";
-@import "../bower/gumby/sass/ui/all";
+@import "../bower/gumby/sass/grid";            // I highly recommend commenting this out and using the Semantic Grid mixins
+@import "../bower/gumby/sass/ui/all";         // And if you're really want to be 1337, comment out the UI classes too
 @import "../bower/gumby/sass/shame";
 
-@import "var/global";
+// @import "var/global";        Misc global classes/selectors added myself. Only use with Compass v1.0.0alpha / Sass 3.3.x
 
 @import "custom";
