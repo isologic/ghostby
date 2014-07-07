@@ -13,6 +13,6 @@
     "gumby-inview": "latest",
     "gumby-parallax": "latest",
     "gumby-shuffle": "latest",
-    "gumby-comments": "~1.0.0"
+    "gumby-comments": "latest"
   }
 }
