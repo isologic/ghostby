@@ -20,7 +20,7 @@ $nav-distance: 0; 							// Navigation distance from the top of the viewport
 // Typography
 $font-family: "Open Sans";
 $font-style-italic: italic;
-// $icons: entypo;
+$icons: entypo;
 $iconsPath: bower/ionicons;
 $font-smoothing: antialiased;
 
@@ -50,7 +50,7 @@ $rhythm-height: .711;
 
 // ! ****** NOTE: UNCOMMENT THESE SETTINGS FOR USE WITH MODULAR SCALE v2.x ****** ! //
 $phi: 1.618034;                               // Ratio for Modular Scale
-$pi:  1 / 3.14159265                         // Just for kicks
+$pi:  1 / 3.14159265;                         // Just for kicks
 $ms-ratio: $phi;
 $ms-base: 16px !default;
 $ratio: $ms-ratio;
