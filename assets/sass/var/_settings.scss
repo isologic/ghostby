@@ -20,7 +20,8 @@ $nav-distance: 0; 							// Navigation distance from the top of the viewport
 // Typography
 $font-family: "Open Sans";
 $font-style-italic: italic;
-$icons: entypo;
+// $icons: entypo;
+$iconsPath: bower/ionicons;
 $font-smoothing: antialiased;
 
 // Font Weights
@@ -48,16 +49,16 @@ $rhythm-height: .711;
 // https://github.com/scottkellum/modular-scale
 
 // ! ****** NOTE: UNCOMMENT THESE SETTINGS FOR USE WITH MODULAR SCALE v2.x ****** ! //
-// $phi: 1.618034;                               // Ratio for Modular Scale
-// $pi:  1 / 3.14159265                         // Just for kicks
-// $ms-ratio: $phi;
-// $ms-base: 16px !default;
-// $ratio: $ms-ratio;
-// $base-font-size: $ms-base;
+$phi: 1.618034;                               // Ratio for Modular Scale
+$pi:  1 / 3.14159265                         // Just for kicks
+$ms-ratio: $phi;
+$ms-base: 16px !default;
+$ratio: $ms-ratio;
+$base-font-size: $ms-base;
 // ! ****** ! //
 
-$ratio: golden(); 									// < --- Comment out if using 2.x
-$base-font-size: 16px !default;  		// < --- Comment out if using 2.x
+// $ratio: golden(); 									// < --- Comment out if using 2.x
+// $base-font-size: 16px !default;  		// < --- Comment out if using 2.x
 $importantNum: 78px !default;
 $base-size: $base-font-size $importantNum;
 // Gumby Default Scale Values: 16, 18, 26, 30, 42, 48, 68, 78, 110, 126;
@@ -67,24 +68,24 @@ $xsmall: ms(-2);
 $small: ms(-1);
 $norm: ms(0);									// $base-font-size (16px == default)
 $med: ms(1);
-$large: ms(2);
-$larger: ms(3);
-$xlarge: ms(4);
-$xxlarge: ms(5);
-$xxxlarge: ms(6);
-$reallybig: ms(7);
-$tremendous: ms(8);
-$absurd: ms(10);
+//$large: ms(2);
+//$larger: ms(3);
+//$xlarge: ms(4);
+//$xxlarge: ms(5);
+//$xxxlarge: ms(6);
+//$reallybig: ms(7);
+//$tremendous: ms(8);
+//$absurd: ms(10);
 
 // Uncomment, if you want, for use with Modular Scale 2.x ; version 1.0.x doesn't support decimal integers! //
-// $large: ms(1.5);
-// $larger: ms(2);
-// $xlarge: ms(2.5);
-// $xxlarge: ms(3);
-// $xxxlarge: ms(3.5);
-// $reallybig: ms(4);
-// $tremendous: ms(5);
-// $absurd: ms(6);
+$large: ms(1.5);
+$larger: ms(2);
+$xlarge: ms(2.5);
+$xxlarge: ms(3);
+$xxxlarge: ms(3.5);
+$reallybig: ms(4);
+$tremendous: ms(5);
+$absurd: ms(6);
 
 // Typography Colors
 $header-font-color: #444444 !default;
