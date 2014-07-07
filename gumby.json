@@ -17,7 +17,8 @@
 			"assets/bower/gumby-images/gumby.images.js",
 			"assets/bower/gumby-fittext/gumby.fittext.js",
 			"assets/bower/gumby-shuffle/gumby.shuffle.js",
-			"assets/bower/gumby-inview/gumby.inview.js"
+			"assets/bower/gumby-inview/gumby.inview.js",
+			"assets/bower/gumby-comments/gumby.comments.js"
 		],
 		"outPath": "assets/js"
 	}
