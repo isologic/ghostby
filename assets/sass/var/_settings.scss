@@ -46,11 +46,18 @@ $rhythm-height: .711;
 // Modular Scale Settings
 // http://www.modularscale.com by Tim Brown
 // https://github.com/scottkellum/modular-scale
-$ms-ratio: $golden;						// Ratio for Modular Scale
-//$base-font-size: 16px !default;
-$ms-base: 10px !default;
+
+// ! ****** NOTE: UNCOMMENT THESE SETTINGS FOR USE WITH MODULAR SCALE v2.x ****** ! //
+// $phi: 1.618034;                               // Ratio for Modular Scale
+// $ms-ratio: $phi;
+// $ms-base: 16px !default;
+// $ratio: $ms-ratio;
+// $base-font-size: $ms-base;
+// ! ****** ! //
+
+$ratio: golden(); 									// < --- Comment out if using 2.x
+$base-font-size: 16px !default;  		// < --- Comment out if using 2.x
 $importantNum: 78px !default;
-$base-font-size: $ms-base;
 $base-size: $base-font-size $importantNum;
 // Gumby Default Scale Values: 16, 18, 26, 30, 42, 48, 68, 78, 110, 126;
 
@@ -64,9 +71,19 @@ $larger: ms(3);
 $xlarge: ms(4);
 $xxlarge: ms(5);
 $xxxlarge: ms(6);
-$reallybig: ms(8);
-$tremendous: ms(9);
+$reallybig: ms(7);
+$tremendous: ms(8);
 $absurd: ms(10);
+
+// Uncomment, if you want, for use with Modular Scale 2.x ; version 1.0.x doesn't support decimal integers! //
+// $large: ms(1.5);
+// $larger: ms(2);
+// $xlarge: ms(2.5);
+// $xxlarge: ms(3);
+// $xxxlarge: ms(3.5);
+// $reallybig: ms(4);
+// $tremendous: ms(5);
+// $absurd: ms(6);
 
 // Typography Colors
 $header-font-color: #444444 !default;
