@@ -22,7 +22,7 @@
 
 @import "var/settings";
 @import "../bower/gumby/sass/var/lists";
-@import "../bower/gumby/sass/var/icons/entypo";
+// @import "../bower/gumby/sass/var/icons/entypo";
 
 @import "compass";
 @import "compass/reset";
@@ -35,6 +35,9 @@
 // @import "../bower/gumby/sass/grid";
 // @import "../bower/gumby/sass/ui/all";
 @import "../bower/gumby/sass/shame";
+
+@import "../bower/SassyFilters/dist/SassyFilters";
+@import "../bower/ionicons/scss/ionicons";
 
 @import "var/global";
 
