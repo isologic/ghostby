@@ -9,22 +9,20 @@
 			// Set up Dirs
 			meta: {
 				bowerDir: 'assets/bower',
-				cssDir: 'assets/css'
+				cssDir: 'assets/css',
 				jsDir: 'assets/js',
-				sassDir: 'assets/sass',
+				sassDir: 'assets/sass'
 			},
 
 			concat: {
 				options: {
 					stripBanners: true,
 					separator: ';'
-				}
+				},
 				build: {
 					src: [
-						'<%= meta.bowerDir %>/gumby/js/plugins.js',
-						'<%= meta.bowerDir %>/greensock-js/src/uncompressed/TweenMax.js',
-						'<%= meta.bowerDir %>/greensock-js/src/uncompressed/jquery.gsap.js',
-						'<%= meta.bowerDir %>/jquery.easing/js/jquery.easing.js'
+						'<%= meta.bowerDir %>/gumby/js/plugins.js',         // Placeholder jQuery plugin, found in source JS dir
+						// '<%= meta.bowerDir %>/ more / bower / plugins.of.your.choice.js'
 					],
 					dest: '<%= meta.jsDir %>/components.js'
 				}
@@ -41,8 +39,9 @@
 				build: {
 					files: {
 						'<%= meta.jsDir %>/app.min.js': [
-							'<%= meta.bowerDir %>/gumby/js/main.js',
+							'<%= meta.bowerDir %>/gumby/js/main.js',      // Gumby's jQuery init functions, found in source JS dir
 							'<%= meta.jsDir %>/app.js'
+						]
 					}
 				}
 			},
