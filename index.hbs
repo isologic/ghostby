@@ -1,0 +1,15 @@
+{{!< default}}
+
+{{#foreach posts}}
+    {{#if @first}}
+        {{> full-post}}     {{! display the first post in full length }}
+    {{else}}
+        {{> list-post}}     {{! display the remaining posts in list of excerpts }}
+    {{/if}}
+{{/foreach}}
+
+
+{{!! After all the posts, show the newer/older pagination links }}
+{{#if pagination}}
+    {{pagination}}
+{{/if}}

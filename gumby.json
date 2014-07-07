@@ -1,0 +1,24 @@
+{
+	"build": {
+		"gumbyPath": "assets/bower/gumby",
+		"modules": [
+			"retina",
+			"fixed",
+			"skiplink",
+			"toggleswitch",
+			"checkbox",
+			"radiobtn",
+			"tabs",
+			"navbar",
+			"validation"
+		],
+		"addons": [
+			"assets/bower/gumby-parallax/gumby.parallax.js",
+			"assets/bower/gumby-images/gumby.images.js",
+			"assets/bower/gumby-fittext/gumby.fittext.js",
+			"assets/bower/gumby-shuffle/gumby.shuffle.js",
+			"assets/bower/gumby-inview/gumby.inview.js"
+		],
+		"outPath": "assets/js"
+	}
+}

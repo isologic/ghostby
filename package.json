@@ -1,0 +1,24 @@
+{
+  "name": "Ghostby",
+  "version": "0.1.2",
+  "description": "Ghost starter theme using Gumby Framework 2.6",
+  "author": {
+        "name": "John Polinski",
+        "email": "john@designwavestudio.com"
+  },
+  "github": "https://github.com/isologic/ghostby",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:isologic/ghostby.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-compass": "^0.4.0",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "matchdep": "~0.1.2"
+  }
+}

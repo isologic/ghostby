@@ -1,0 +1,23 @@
+<section class="{{post_class}}">
+	<header>
+		<h1>{{{title}}}</h1>
+		<time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+	</header>
+	<article class="entry-content">
+		{{content}}
+	</article>
+	<footer>
+		{{#if author}}
+			<figure class="align-left" style="max-width: 120px; margin-top: 10px">
+				<img src="{{author.image}}" alt="{{author.name}}">
+				<figcaption></figcaption>
+			</figure>
+			<h4>{{author.name}}</h4>
+			<a class="auth-email" href="mailto:{{author.email}}">{{author.email}}</a>
+			<blockquote>{{author.bio}}</blockquote>
+		{{/if}}
+		{{#if tags}}
+			<div class="tags">Particles: <span>{{tags}}</span></div>
+		{{/if}}
+	</footer>
+</section>

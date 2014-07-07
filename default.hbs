@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		{{! Settings }}
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		{{! Page Meta }}
+	    <title>{{@blog.title}}</title>
+	    <meta name="description" content="{{@blog.description}}">
+
+		{{! Compiled Styles.. Compyles? }}
+		<link rel="stylesheet" href="{{ asset "css/gumby.css" }}">
+
+		<script src="{{ asset "js/lib/modernizr.js" }}"></script>
+
+		{{ghost_head}}
+	</head>
+	<body class="{{body_class}}">
+
+		{{> header}}
+
+		<main role="primary">
+			{{{body}}}
+		</main>
+
+		{{> footer}}
+
+		{{ghost_foot}}
+
+		{{> scripts }}
+
+	</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "Ghostby",
+  "version": "0.1.2",
+  "homepage": "https://github.com/isologic/ghostby",
+  "authors": [
+    "isologic <liquid.knives@gmail.com>"
+  ],
+  "dependencies": {
+  	"gumby": "latest",
+  	"gumby-fittext": "latest",
+    "gumby-images": "latest",
+    "gumby-inview": "latest",
+    "gumby-parallax": "latest",
+    "gumby-shuffle": "latest"
+  }
+}

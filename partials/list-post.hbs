@@ -1,0 +1,18 @@
+<section class="{{post_class}}">
+	<header>
+		<h2><a href="{{url}}">{{{title}}}</a></h2>
+		<time datetime="{{date format='YYYY-MM-DD'}}"> {{date published_at format="MMMM DD, YYYY"}} </time>
+	</header>
+	<article class="entry-content">
+		<p class="excerpt">{{excerpt}}... <a href="{{url}}">Read More</a></p>
+	</article>
+	<footer>
+		{{#if author}}
+			<h4>{{author.name}}</h4>
+			<a class="auth-email" href="mailto:{{author.email}}">{{author.email}}</a>
+		{{/if}}
+		{{#if tags}}
+			<div class="tags">Particles: <span>{{tags}}</span></div>
+		{{/if}}
+	</footer>
+</section>
