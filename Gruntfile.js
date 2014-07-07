@@ -14,17 +14,36 @@
 				sassDir: 'assets/sass',
 			},
 
+			concat: {
+				options: {
+					stripBanners: true,
+					separator: ';'
+				}
+				dist: {
+					src: [
+						'<%= meta.bowerDir %>/gumby/js/plugins.js',
+						'<%= meta.bowerDir %>/greensock-js/src/uncompressed/TweenMax.js',
+						'<%= meta.bowerDir %>/greensock-js/src/uncompressed/jquery.gsap.js',
+						'<%= meta.bowerDir %>/jquery.easing/js/jquery.easing.js'
+					],
+					dest: '<%= meta.jsDir %>/components.js'
+				}
+			},
+
 			uglify: {
 				options: {
 					compress: true,
 					mangle: true,
 					report: 'min',
-					banner: '/*! <%= pkg.name %> -  <%= pkg.author %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+					banner: '/*! <%= pkg.name %> - <%= pkg.version %>\n' +
+									' <%= pkg.author %>\n' + '<%= grunt.template.today("yyyy-mm-dd") %> */\n'
 				},
 
 				build: {
 					files: {
-						"<%= meta.jsDir %>/app.min.js": "<%= meta.jsDir %>/app.js"
+						'<%= meta.jsDir %>/app.min.js': [
+							'<%= meta.bowerDir %>/gumby/js/main.js',
+							'<%= meta.jsDir %>/app.js'
 					}
 				}
 			},
@@ -58,7 +77,10 @@
 			}
 
 		});
-
+		grunt.registerTask('build', [
+			'uglify',
+			'compass'
+		]);
 		grunt.registerTask('default', ['watch']);
 
 	};
